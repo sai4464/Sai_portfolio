@@ -1,0 +1,68 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 4rem;
+}
+
+body {
+  @apply antialiased text-gray-800 bg-[#F1FAEE];
+}
+
+::selection {
+  @apply bg-[#457B9D] text-white;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-[#F1FAEE];
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-[#457B9D] rounded-full hover:bg-[#1D3557] transition-colors;
+}
+
+/* Skills scroll animation */
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.skills-scroll {
+  display: flex;
+  gap: 1rem;
+  animation: scroll 10s linear infinite; /* Increased speed from 15s to 10s */
+  padding: 0.5rem 0;
+}
+
+.skills-scroll:hover {
+  animation-play-state: paused;
+}
+
+/* Gradient animation */
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.animate-gradient {
+  animation: gradient 15s ease infinite;
+  background-size: 200% 200%;
+}
