@@ -398,59 +398,53 @@ function App() {
         </h2>
         <div className="grid md:grid-cols-2 gap-8">
           {[
-            
-              {
-                title: "PrepNest – Role-Based Interview Preparation",
-                description: "Designed an AI-driven interview preparation platform that tailors questions and study materials based on the selected job role and experience level.",
-                technologies: ["React", "Node.js", "MongoDB", "OpenAI API"],
-                link: "https://github.com/sai4464/prepnest",
-                image: "src/img/prepnest.jpg"
-                
-              },
-              {
-                title: "Stock Manager for Small Restaurants",
-                description: "Developed an intuitive stock management system tailored for small restaurants, enabling real-time inventory tracking, automated restocking alerts, and cost analysis for efficient supply chain management.",
-                technologies: ["React", "Node.js", "MongoDB", "Express", "Tailwind CSS"],
-                link: "https://github.com/sai4464/restaurant-stock-manager",
-                image: "src/img/stockmanager.jpg"
-              },
-              {
-                title: "Cricket Pitch & Match Outcome Predictor",
-                description: "Building a real-time cricket analytics system to predict pitch behavior and match outcomes using live score data and machine learning. Focused on identifying conditions favoring batters or bowlers based on past trends and current match stats.",
-                technologies: ["Python", "Scikit-learn", "Pandas", "Flask", "Live Score API", "Data Visualization"],
-                image: "https://images.unsplash.com/photo-1579981075884-2a9d5b2d1353?q=80&w=800&auto=format&fit=crop"
-              },
-              {
-                title: "AI-Powered Resume Analyzer",
-                description: "Built an AI-driven resume analyzer that provides feedback on formatting, keyword optimization, and job match percentage using NLP and machine learning models.",
-                technologies: ["Next.js", "Python", "TensorFlow", "OpenAI API"],
-                image: "https://images.unsplash.com/photo-1522199710521-72d69614c702?q=80&w=800&auto=format&fit=crop"
-              },
-              {
-                title: "Fraud Detection System",
-                description: "Implemented a machine learning model that detects fraudulent transactions using anomaly detection and classification algorithms. The system helps businesses minimize financial losses.",
-                technologies: ["Python", "Scikit-learn", "Pandas", "Flask"],
-                image: "https://images.unsplash.com/photo-1588702547919-26089e690ecc?q=80&w=800&auto=format&fit=crop"
-              },
-              {
-                title: "AI Chatbot for Customer Support",
-                description: "Created an AI-driven chatbot for automating customer support queries using NLP. Integrated real-time responses and adaptive learning for improved user experience.",
-                technologies: ["Python", "Flask", "OpenAI API", "MongoDB"],
-                image: "https://images.unsplash.com/photo-1599658880436-c61792e70672?q=80&w=800&auto=format&fit=crop"
-              },
-              {
-                title: "Medical Diagnosis System using Machine Learning",
-                description: "Developed a predictive system for diagnosing diseases based on symptoms using classification models like Random Forest and Neural Networks.",
-                technologies: ["Python", "TensorFlow", "Flask", "Scikit-learn"],
-                image: "src/img/medical.jpg"
-              },
-              {
-                title: "Sentiment Analysis on Social Media Data",
-                description: "Designed a machine learning pipeline to analyze and classify sentiments from Twitter data using NLP and deep learning models.",
-                technologies: ["Python", "NLTK", "TensorFlow", "Flask"],
-                image: "https://images.unsplash.com/photo-1553729459-efe14ef6055d?q=80&w=800&auto=format&fit=crop"
-              
-              }
+  {
+    title: "PrepNest – Role-Based Interview Preparation",
+    description: "Designed an AI-driven interview preparation platform that tailors questions and study materials based on the selected job role and experience level.",
+    technologies: ["React", "Node.js", "MongoDB", "OpenAI API"],
+    link: "https://github.com/sai4464/prepnest",
+    image: "src/img/newimage1.png"
+  },
+  {
+    title: "Stock Manager for Small Restaurants",
+    description: "Developed an intuitive stock management system tailored for small restaurants, enabling real-time inventory tracking, automated restocking alerts, and cost analysis for efficient supply chain management.",
+    technologies: ["React", "Node.js", "MongoDB", "Express", "Tailwind CSS"],
+    link: "https://github.com/sai4464/restaurant-stock-manager",
+    image: "src/img/stockmanager.jpg"
+  },
+  {
+    title: "AI-Based Bug Triage System",
+    description: "Built a full-stack tool that classifies and prioritizes bug reports using OpenAI’s GPT models. Designed a Flask backend for analyzing bug titles and descriptions, and a React frontend for real-time classification. Integrated unit testing and CI workflows for robustness.",
+    technologies: ["Flask", "React", "OpenAI API", "PyTest", "GitHub Actions", "CI/CD"],
+    image: "https://images.unsplash.com/photo-1603791440384-56cd371ee9a7?q=80&w=800&auto=format&fit=crop"
+  },
+  {
+    title: "Real-Time Whiteboard Collaboration",
+    description: "Developed a real-time, multi-user whiteboard app supporting drawing, chat, undo/redo, and snapshots. Used WebSockets for real-time sync and fault-tolerant reconnect logic. UI was modularized for better performance and debugging.",
+    technologies: ["Node.js", "WebSockets", "Express", "Canvas API", "JavaScript"],
+    image: "src/img/newimage3.png"
+
+  },
+  {
+    title: "Mobile Wellness App",
+    description: "Built a cross-platform Flutter app to track health metrics and sync with BLE devices. Included real-time syncing, local storage, and alerts for abnormal readings. Unit and widget tests were implemented for robustness.",
+    technologies: ["Flutter", "Dart", "Bluetooth LE", "Provider", "Flutter DevTools"],
+    image: "src/img/newname4.png"
+  },
+  {
+    title: "DevOps Portfolio Monitor",
+    description: "Created a personal dashboard to track GitHub repo status, build health, and commits. Used GitHub API for real-time data, Docker for containerization, and GitHub Actions to monitor repo changes and trigger alerts.",
+    technologies: ["Node.js", "MongoDB", "GitHub API", "Docker", "GitHub Actions"],
+    image: "src/img/newname5.png"
+  },
+  {
+    title: "Campus ChatGPT Assistant",
+    description: "Developed a GPT-powered chatbot to answer college FAQs. Built using FastAPI and OpenAI API on the backend, and React on the frontend with chat history, Firebase integration, and real-time response streaming.",
+    technologies: ["FastAPI", "OpenAI API", "React", "Firebase", "Python"],
+    image: "src/img/newname6.png"
+  }
+
+
             
             
           ].map((project, index) => (
